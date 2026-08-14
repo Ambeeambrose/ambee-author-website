@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "title": "Blood Under Contract",
+      "cover": "css/images/book-covers/BUC.jpg",
+      "description": "A gripping crime thriller following Detective Ibrahim Kiki as he uncovers an international organ trafficking network.",
+      "learnMore": "blood-under-contract.html",
+      "amazon": "https://www.amazon.com/dp/B0GN34S1FH",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "When Love Goes Wrong",
+      "cover": "css/images/book-covers/WLGOESWAM.JPG",
+      "description": "When the past refuses to stay buried, love begins to fall apart.",
+      "learnMore": "when-love-goes-wrong.html",
+      "amazon": "https://www.amazon.com/dp/B0G6J9FLNJ",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "Betrayal of Brothers",
+      "cover": "css/images/book-covers/BOB.jpg",
+      "description": "A gripping crime story where greed destroys family loyalty.",
+      "learnMore": "betrayal-of-brothers.html",
+      "amazon": "https://www.amazon.com/dp/B0CW1896QP",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "The Mark Beneath the Diamond",
+      "cover": "css/images/book-covers/TMBTD.jpg",
+      "description": "A dangerous mystery hidden beneath wealth, power and deception.",
+      "learnMore": "the-mark-beneath-the-diamond.html",
+      "amazon": "https://www.amazon.com/dp/B0GHPLTDRL",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "The Shadow of Truth",
+      "cover": "css/images/book-covers/TSOT.jpg",
+      "description": "Every secret has a price, and every truth casts a shadow.",
+      "learnMore": "the-shadow-of-truth.html",
+      "amazon": "https://www.amazon.com/dp/B0GFCPB7MQ",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "The Price of a Dream",
+      "cover": "css/images/book-covers/TPOAD.JPG",
+      "description": "An inspiring story about sacrifice, ambition and hope.",
+      "learnMore": "the-price-of-a-dream.html",
+      "amazon": "https://www.amazon.com/dp/B0GFY8MLN3",
+      "buttonText": "Learn More"
+    },
+    {
+      "title": "Child Abuse: The Story of Busy Parents",
+      "cover": "css/images/book-covers/CABP.JPG",
+      "description": "A powerful look at how neglect can shape a child's future.",
+      "learnMore": "child-abuse.html",
+      "amazon": "https://www.amazon.com/dp/B0G58FDBKH",
+      "buttonText": "Learn More"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | Ambee Ambrose</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Ambee Ambrose
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy-direct.html">Bookstore</a></li>
+            <li><a href="books.html">My Books</a></li>
+            <li><a href="reviews.html">Reviewer Ratings</a></li>
+            <li><a href="videos.html">Book Trailers</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="checkout-page">
+
+
+    <h1>Secure Checkout</h1>
+
+
+    <p class="checkout-intro">
+        Thank you for supporting my work by purchasing directly from my official website.
+        Please choose your preferred payment method below.
+    </p>
+
+
+    <!-- BOOK INFORMATION -->
+
+    <div class="checkout-card">
+
+        <img id="checkoutCover"
+             src="css/images/book-covers/SPPG.jpg"
+             alt="Smart Practical Pregnancy Guide"
+             class="checkout-cover">
+
+        <h2 id="checkoutTitle">Smart Practical Pregnancy Guide</h2>
+
+        <p class="author-name">
+            By Ambee Ambrose
+        </p>
+
+        <p class="book-price" id="checkoutPrice">
+            Price: $9.99
+        </p>
+
+    </div>
+
+
+    <!-- PAYMENT METHODS -->
+
+    <h2 class="payment-title">
+        Available Payment Methods
+    </h2>
+
+
+    <div class="payment-information">
+
+
+        <div class="payment-method">
+
+            <h3>₿ Bitcoin Wallet</h3>
+
+            <p><strong>Wallet Address:</strong></p>
+
+            <p class="payment-value">
+                65f69cb5-7d13-4d36-af60-37a727f55070
+            </p>
+
+        </div>
+
+
+        <div class="payment-method">
+
+            <h3>💵 USD Bank Transfer</h3>
+
+            <p><strong>Bank Name:</strong> Zenith Bank</p>
+
+            <p><strong>Account Name:</strong> Ambee Concepts Ltd</p>
+
+            <p><strong>Account Number:</strong> 5075657177</p>
+
+            <p><strong>SWIFT Code:</strong> ZEIBNGLA</p>
+
+            <p><strong>Branch Code:</strong> 320</p>
+
+            <p><strong>Sort Code:</strong> 057170116</p>
+
+            <p><strong>Bank Address:</strong><br>
+                Km 111 Idiroko Road,<br>
+                Ota, Ogun State,<br>
+                Nigeria.
+            </p>
+
+        </div>
+
+
+        <div class="payment-method">
+
+            <h3>🇳🇬 Nigeria Naira Bank Transfer</h3>
+
+            <p><strong>Bank Name:</strong> Zenith Bank (Ota)</p>
+
+            <p><strong>Account Name:</strong> Ambee Concepts Ltd</p>
+
+            <p><strong>Account Number:</strong> 1310883565</p>
+
+        </div>
+
+
+        <div class="payment-method">
+
+            <h3>🟢 Payoneer</h3>
+
+            <p>Coming Soon</p>
+
+        </div>
+
+
+        <div class="payment-method">
+
+            <h3>🅿️ PayPal</h3>
+
+            <p>Coming Soon</p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- PAYMENT NOTICE -->
+
+    <div class="payment-notice">
+
+        <h3>Payment Notice</h3>
+
+        <p>
+            Thank you for choosing to purchase directly from
+            Ambee Ambrose's official bookstore.
+        </p>
+
+        <p>
+            Please complete your payment using any of the
+            available payment methods above. When you have
+            finished, enter your payment reference below
+            and click <strong>"Continue After Payment"</strong>.
+        </p>
+
+        <p>
+            Your payment notification will be received and your
+            payment will be verified. Once verification is complete,
+            download instructions will be sent to the email address
+            you provided during checkout.
+        </p>
+
+    </div>
+
+
+    <!-- CUSTOMER INFORMATION -->
+
+    <div class="customer-information">
+
+
+        <h2>Customer Information</h2>
+
+
+        <p class="customer-intro">
+            Please provide your details after completing your payment.
+            This information will be used to verify your payment,
+            confirm your purchase, and send you download instructions.
+        </p>
+
+
+        <form
+            class="customer-form"
+            name="book-order"
+            method="POST"
+            action="/payment-confirmation.html"
+            data-netlify="true"
+            netlify-honeypot="bot-field">
+
+
+            <input type="hidden" name="form-name" value="book-order">
+
+            <input type="hidden" name="book-title" id="checkoutBookTitle">
+            <input type="hidden" name="book-price" id="checkoutBookPrice">
+
+
+            <p hidden>
+                <label>
+                    Don't fill this out:
+                    <input name="bot-field">
+                </label>
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="fullname">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="country">
+                    Country
+                </label>
+
+                <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Enter your country"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="orderid">
+                    Payment Reference (Optional)
+                </label>
+
+                <input
+                    type="text"
+                    id="orderid"
+                    name="orderid"
+                    placeholder="Transaction ID or Reference Number">
+
+            </div>
+
+
+            <!-- CONTINUE AFTER PAYMENT -->
+
+            <div class="checkout-button">
+
+       <button type="submit" class="btn">
+        Continue After Payment
+       </button>
+
+       </div>
+
+
+        </form>
+
+
+    </div>
+
+
+</section>
+
+
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+
+
+</body>
+</html>

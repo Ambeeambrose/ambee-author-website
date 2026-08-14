@@ -1,0 +1,1996 @@
+/* Ambee Author Website Styles */
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+
+.hero {
+    min-height: 100vh;
+    padding: 20px 8% 40px;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,0.35),
+            rgba(10,10,10,0.45)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 15px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* ==========================================
+   HERO CONTENT
+ ========================================== */
+
+.hero-content {
+    margin-top: 120px;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 1.35rem;
+    max-width: 750px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+    color: #d7d7d7;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn {
+    display: inline-block;
+    width: 160px;
+    padding: 10px 20px;
+    background: #d4af37;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f5c542;
+}/* Hero Layout */
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 100px;
+    flex-wrap: nowrap;
+}
+
+.hero-text {
+    flex: 1.4;
+    max-width: 650px;
+}
+
+.hero-image {
+    flex: 0 0 320px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 220px;
+    border-radius: 18px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+}
+   /* ==========================================
+   FEATURED BOOKS
+    ========================================== */
+
+
+.featured-books {
+    padding: 80px 8%;
+    margin-top: -20px;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,.45),
+            rgba(10,10,10,.65)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.featured-books h2 {
+    text-align: center;
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.book-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.book-card img {
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+.book-card img:hover {
+    transform: scale(1.05);
+}
+
+.book-card h3 {
+    color: white;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   ABOUT ME - CINEMATIC EDITION
+========================================== */
+
+.about{
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding:90px 8%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.38),
+        rgba(0,0,0,.55)
+    ),
+    url("images/about-me-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+
+/* Main Layout */
+
+.about-overlay{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:80px;
+
+}
+
+
+/* LEFT SIDE */
+
+.about-left{
+
+    width:60%;
+
+}
+
+
+.about-left h1{
+
+    color:#D4AF37;
+
+    font-size:68px;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* Gold Divider */
+
+.gold-line{
+
+    width:130px;
+
+    height:4px;
+
+    background:#D4AF37;
+
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+}
+
+
+/* Paragraphs */
+
+.about-left p{
+
+    color:#ffffff;
+
+    font-size:20px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,.75);
+
+}
+
+
+/* Gold Names */
+
+.author-name{
+
+    color:#D4AF37;
+
+    font-weight:bold;
+
+}
+
+
+/* RIGHT SIDE */
+
+.about-right{
+
+    width:32%;
+
+    text-align:right;
+
+}
+
+
+.about-right img{
+
+    width:320px;
+
+    max-width:100%;
+
+    border-radius:20px;
+
+    border:3px solid rgba(212,175,55,.65);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.55);
+
+}
+
+
+/* Signature */
+
+.signature{
+
+    margin-top:50px;
+
+    font-size:42px;
+
+    color:#D4AF37;
+
+    font-family:cursive;
+
+}
+
+
+.signature span{
+
+    display:block;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    color:#ffffff;
+
+    margin-top:8px;
+
+}
+
+/* ===========================
+   Individual Book Page
+=========================== */
+
+.book-page {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-cover img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    margin: 30px auto;
+    display: block;
+}
+
+.book-description {
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.book-description h3 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-details {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+
+.book-details h3 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.book-details p {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.book-details .btn {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.books-intro {
+    text-align: center;
+    color: #d4af37;
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   AUTHOR LOGO
+========================================== */
+
+.author-logo {
+    text-align: center;
+}
+
+.author-logo img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #f4c542;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.author-logo h2 {
+    color: #d4af37;
+    font-size: 22px;
+    margin: 0;
+}
+
+.author-logo p {
+    color: #d4af37;
+    font-size: 15px;
+    margin: 2px 0 0;
+}
+
+/* ==========================================
+   READER RATINGS PAGE
+========================================== */
+
+.reviews-section {
+
+    min-height: 100vh;
+
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            rgba(8,18,35,.25),
+            rgba(8,18,35,.45)
+        ),
+        url("images/reviews-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* ==========================================
+   READER RATINGS HEADER
+========================================== */
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-header h1 {
+    color: #d4af37;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.reviews-header h2 {
+    color: #ffffff;
+    font-size: 34px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.reviews-header p {
+    color: #d5d5d5;
+    font-size: 18px;
+}
+
+.gold-line {
+    width: 120px;
+    height: 4px;
+    background: #d4af37;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+/* ==========================================
+   REVIEW CARDS
+========================================== */
+
+.stars {
+    color: #FFD700;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 15px 0;
+    text-shadow: 0 2px 10px rgba(255,215,0,0.35);
+}
+
+.review-card h3 {
+    color: #f8f8f8;
+    font-size: 24px;
+    margin: 18px 0 12px;
+}
+
+.review-card p strong {
+    color: #7FDBFF;
+    font-size: 20px;
+}
+
+.review-card p {
+    color: #cfcfcf;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ===========================
+   Contact Page
+=========================== */
+
+.contact-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #dcdcdc;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    color: #d4af37;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+.contact-section .btn {
+    margin-top: 30px;
+    width: 220px;
+    align-self: center;
+}
+
+/* ===========================
+   Social Links
+=========================== */
+
+.social-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-section h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.social-section p {
+    color: #dcdcdc;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+/* ==========================================
+   FEATURED VIDEOS
+========================================== */
+
+.featured-videos{
+
+    padding:100px 8%;
+
+    background:#0f0f0f;
+
+    text-align:center;
+
+}
+
+.featured-videos h2{
+
+    color:#d4af37;
+
+    font-size:44px;
+
+    margin-bottom:15px;
+
+}
+
+.video-intro{
+
+    color:#d5d5d5;
+
+    font-size:20px;
+
+    margin-bottom:60px;
+
+}
+
+.video-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.video-card{
+
+    width:420px;
+
+    background:#1a1a1a;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(212,175,55,.30);
+
+    position:relative;
+
+}
+/* ==========================================
+   CINEMATIC BOOK TRAILERS
+========================================== */
+
+.videos-section{
+
+    min-height:100vh;
+    padding:90px 8%;
+
+    background:
+        linear-gradient(
+            rgba(8,8,12,.35),
+            rgba(8,8,12,.60)
+        ),
+        url("images/videos-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
+/* Header */
+
+.videos-header{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.videos-header h1{
+
+    color:#d4af37;
+    font-size:48px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+
+}
+
+.videos-header p{
+
+    color:#e5e5e5;
+    font-size:20px;
+
+}
+
+/* Grid */
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5, minmax(170px,1fr));
+
+    gap:12px;
+
+    justify-content:center;
+
+    justify-items:center;
+
+}
+
+/* Card */
+
+.video-card{
+
+    width:100%;
+    max-width:210px;
+
+    background:rgba(15,15,15,.78);
+
+    border:1px solid rgba(212,175,55,.30);
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+    transition:.30s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-3px);
+    border-color:#d4af37;
+
+}
+
+/* Thumbnail */
+
+.video-thumbnail{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.video-thumbnail img{
+
+    width:100%;
+    height:130px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.video-card:hover .video-thumbnail img{
+
+    transform:scale(1.03);
+
+}
+
+/* Play Overlay */
+
+.play-overlay{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.play-circle{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:rgba(212,175,55,.92);
+
+    color:#111;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:20px;
+
+    transition:.30s;
+
+}
+
+.video-card:hover .play-circle{
+
+    transform:scale(1.08);
+
+}
+
+/* Content */
+
+.video-info{
+
+    padding:10px;
+    text-align:center;
+
+}
+
+.video-info h3{
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    margin:5px 0;
+
+}
+
+.video-info p{
+
+    color:#d5d5d5;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    margin-bottom:10px;
+
+}
+
+/* Buttons */
+
+.video-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:8px;
+
+}
+
+.video-buttons .btn,
+.btn-outline{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    font-size:13px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    transition:.30s;
+
+}
+
+.btn-outline{
+
+    color:#d4af37;
+
+    border:2px solid #d4af37;
+
+}
+
+.btn-outline:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+}
+
+/* Responsive */
+
+@media (max-width:1400px){
+
+    .video-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+@media (max-width:1100px){
+
+    .video-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .video-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .video-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+.video-card{
+
+    width:100%;
+
+    max-width:220px;
+
+    margin:0 auto;
+
+    background:rgba(15,15,15,.78);
+
+    border:1px solid rgba(212,175,55,.30);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#d4af37;
+
+}
+
+.video-thumbnail{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.video-thumbnail img{
+
+    width:100%;
+
+    height:140px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.video-info{
+
+    padding:10px;
+
+    text-align:center;
+
+}
+
+.video-info h3{
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    margin:6px 0 4px;
+
+}
+
+.video-info p{
+
+    color:#d5d5d5;
+
+    font-size:13px;
+
+    margin-bottom:10px;
+
+}
+
+.play-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.play-circle{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:rgba(212,175,55,.90);
+
+    color:#111;
+
+    font-size:26px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 0 35px rgba(212,175,55,.70);
+
+}
+
+.video-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.video-card:hover .play-circle{
+
+    transform:scale(1.10);
+
+    transition:.35s;
+
+}
+
+.video-info{
+
+    padding:16px;
+
+    text-align:center;
+
+}
+
+.video-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.btn-outline{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    color:#d4af37;
+
+    border:2px solid #d4af37;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.btn-outline:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+}
+
+.video-buttons .btn{
+
+    padding:6px 12px;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+   Trailer Video Popup
+=========================== */
+
+.video-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.90);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.video-modal video {
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,.7);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .video-modal video {
+        height: 90vh;
+        max-width: 650px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    .video-modal video {
+        height: 80vh;
+        max-width: 500px;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .video-modal video {
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+    }
+}
+
+.close-video {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-video:hover {
+    color: #d4af37;
+}
+
+/* ===========================
+   BOOKS PAGE
+=========================== */
+
+.books-page{
+    width:90%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.books-page h1{
+    font-size:3rem;
+    color:#f4c542;
+    margin-bottom:15px;
+}
+
+.books-intro{
+    max-width:900px;
+    margin:0 auto 50px;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.books-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+}
+
+.books-page .book-card{
+    background:#1b1b1b;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+    transition:.3s ease;
+    padding-bottom:20px;
+}
+
+.books-page .book-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.55);
+}
+
+.books-page .book-card img {
+    width: 100%;
+    height: 200px;      /* Makes the cover shorter */
+    object-fit: cover;
+    border-radius: 10px; /* Just rounds the corners */
+}
+
+.books-page .book-card h3{
+    color:#f4c542;
+    font-size:1.15rem;
+    margin:18px 15px 10px;
+}
+
+.books-page .book-card p{
+    color:#ddd;
+    font-size:.95rem;
+    line-height:1.6;
+    padding:0 15px;
+    min-height:85px;
+}
+
+.books-page .book-card .btn{
+    display:block;
+    width:80%;
+    margin:12px auto;
+    padding:10px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.buy-btn{
+    background:#111;
+    color:#f4c542;
+    border:2px solid #f4c542;
+}
+
+.buy-btn:hover{
+    background:#f4c542;
+    color:#111;
+}
+
+/* Tablet */
+
+@media(max-width:1200px){
+
+.books-grid{
+grid-template-columns: repeat(4, 1fr);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.books-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.books-page h1{
+font-size:2.2rem;
+}
+
+}
+
+/* Small phones */
+
+@media(max-width:480px){
+
+.books-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ==========================================
+   BUY DIRECT BOOKSTORE
+========================================== */
+
+/* ==========================================
+   BUY DIRECT PAGE
+========================================== */
+
+.buy-direct-page{
+    max-width:1200px;
+    margin:35px auto;
+    padding:20px;
+}
+
+.buy-direct-header{
+    text-align:center;
+    margin-bottom:25px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(244,197,66,.20);
+}
+
+.buy-direct-title{
+    font-size:2.8rem;
+    color:#f4c542;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:5px;
+}
+
+.buy-direct-intro{
+    max-width:750px;
+    margin:0 auto;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#d6d6d6;
+}
+
+.buy-direct-section-title{
+    text-align:center;
+    color:#f4c542;
+    font-size:2rem;
+    margin:25px 0 25px;
+    letter-spacing:1px;
+}
+
+.buy-direct-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,220px));
+    justify-content:center;
+    gap:25px;
+}
+
+.buy-direct-card{
+    width:100%;
+    max-width:220px;
+    background:#161616;
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+    padding:15px;
+    text-align:center;
+    transition:.3s ease;
+}
+
+.buy-direct-card:hover{
+    transform:translateY(-8px);
+    border-color:#f4c542;
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+.buy-direct-cover{
+    width:160px;
+    border-radius:10px;
+    margin-bottom:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+}
+
+.buy-direct-book-title{
+    color:#f4c542;
+    font-size:1.1rem;
+    line-height:1.25;
+    margin-bottom:8px;
+}
+
+.buy-direct-description{
+    color:#d8d8d8;
+    font-size:.88rem;
+    line-height:1.5;
+    max-width:230px;
+    margin:0 auto 15px;
+}
+
+.buy-direct-button{
+    display:inline-block;
+    margin-top:0px;
+    min-width:150px;
+}
+
+.buy-direct-price{
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin:15px 0 20px;
+    text-align:center;
+}
+
+/* ==========================================
+   BUY DIRECT MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.buy-direct-page{
+    padding:20px;
+}
+
+.buy-direct-title{
+    font-size:2.2rem;
+}
+
+.buy-direct-intro{
+    font-size:1rem;
+}
+
+.buy-direct-grid{
+    grid-template-columns:1fr;
+}
+
+.buy-direct-cover{
+    width:180px;
+}
+
+}
+/* ==========================================
+   INDIVIDUAL DIRECT BOOK PAGE
+========================================== */
+
+.direct-book-page{
+    max-width:1200px;
+    margin:60px auto;
+    padding:40px;
+    display:flex;
+    align-items:flex-start;
+    gap:50px;
+}
+
+.direct-book-cover{
+    width:220px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.direct-book-content{
+    flex:1;
+}
+
+.direct-book-title{
+    color:#f4c542;
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.direct-book-author{
+    color:#cccccc;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+.direct-book-summary{
+    line-height:1.9;
+    margin-bottom:30px;
+    text-align:justify;
+}
+
+.direct-book-heading{
+    color:#f4c542;
+    font-size:1.5rem;
+    margin-top:30px;
+    margin-bottom:12px;
+}
+
+.direct-book-list{
+    padding-left:22px;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.direct-book-format{
+    color:#8fd3ff;
+    font-size:1.1rem;
+    margin-top:20px;
+}
+
+.direct-book-price{
+    color:#4CAF50;
+    font-size:1.6rem;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.direct-book-button{
+    display:inline-block;
+    margin-top:35px;
+}
+
+/* ==========================================
+   PRODUCT DETAILS PAGE
+========================================== */
+
+.product-page{
+    min-height:100vh;
+    padding:40px 8%;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,0.55),
+            rgba(10,10,10,0.70)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+/* ==========================================
+   CHECKOUT PAGE
+========================================== */
+
+.checkout-page{
+    min-height:100vh;
+    padding:40px 8%;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,.55),
+            rgba(10,10,10,.70)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.checkout-page h1{
+    color:#f4c542;
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.checkout-intro{
+    text-align:center;
+    color:#ddd;
+    max-width:750px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.checkout-card{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+    background:transparent;
+    text-align:center;
+}
+
+.checkout-cover{
+    width:150px;
+    display:block;
+    margin:0 auto 20px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.checkout-card h2{
+    color:#f4c542;
+    margin-bottom:10px;
+}
+
+.checkout-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+/* Customer Information */
+
+.customer-information{
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+
+    background:rgba(0,0,0,.35);
+
+    border:1px solid rgba(244,197,66,.25);
+
+    border-radius:12px;
+}
+
+.customer-information h2{
+    color:#f4c542;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.customer-intro{
+    color:#ddd;
+    text-align:center;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.customer-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    color:#f4c542;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.form-group input{
+    padding:12px 15px;
+    border:1px solid #444;
+    border-radius:8px;
+
+    background:#1b1b1b;
+    color:#fff;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s ease;
+}
+
+.form-group input:focus{
+    border-color:#f4c542;
+
+    box-shadow:0 0 8px rgba(244,197,66,.4);
+}
+
+.payment-title{
+    color:#f4c542;
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:2rem;
+}
+
+.payment-information{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.payment-method{
+    background:rgba(0,0,0,.35);
+    border:1px solid rgba(244,197,66,.25);
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.payment-method h3{
+    color:#f4c542;
+    margin-bottom:15px;
+}
+
+.payment-method p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:8px;
+}
+
+.payment-value{
+    color:#8fd3ff;
+    font-weight:bold;
+    word-break:break-all;
+}
+
+.payment-notice{
+    max-width:900px;
+    margin:50px auto;
+    padding:25px;
+    background:rgba(255,255,255,.05);
+    border-left:4px solid #f4c542;
+    border-radius:10px;
+}
+
+.payment-notice h3{
+    color:#f4c542;
+    margin-bottom:15px;
+}
+
+.payment-notice p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.checkout-button{
+    text-align:center;
+    margin:40px 0 70px;
+}
+
+/* ==========================================
+   PAYMENT CONFIRMATION PAGE
+========================================== */
+
+.payment-confirmation-page{
+    min-height:100vh;
+    padding:40px 8%;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,.55),
+            rgba(10,10,10,.70)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    text-align:center;
+}
+
+.payment-confirmation-page h1{
+    color:#f4c542;
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.confirmation-intro{
+    color:#ddd;
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.confirmation-card{
+    max-width:700px;
+    margin:0 auto 40px;
+    padding:20px;
+    background:transparent;
+}
+
+.confirmation-cover{
+    width:150px;
+    display:block;
+    margin:0 auto 20px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.confirmation-card h2{
+    color:#f4c542;
+    margin-bottom:10px;
+}
+
+.confirmation-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.confirmation-message{
+    max-width:850px;
+    margin:0 auto 40px;
+    padding:30px;
+
+    background:rgba(0,0,0,.35);
+
+    border:1px solid rgba(244,197,66,.25);
+
+    border-radius:12px;
+}
+
+.confirmation-message h3{
+    color:#f4c542;
+    margin-bottom:20px;
+}
+
+.confirmation-message p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.confirmation-button{
+    margin:50px 0 70px;
+    text-align:center;
+}
+
+/* ==========================================
+   DOWNLOAD PAGE
+========================================== */
+
+.download-page{
+    min-height:100vh;
+    padding:40px 8%;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,.55),
+            rgba(10,10,10,.70)
+        ),
+        url("images/home-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    text-align:center;
+}
+
+.download-page h1{
+    color:#f4c542;
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.download-intro{
+    color:#ddd;
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.download-card{
+    max-width:700px;
+    margin:0 auto 40px;
+    padding:20px;
+    background:transparent;
+}
+
+.download-cover{
+    width:150px;
+    display:block;
+    margin:0 auto 20px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.download-card h2{
+    color:#f4c542;
+    margin-bottom:10px;
+}
+
+.download-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.download-options{
+    max-width:700px;
+    margin:40px auto;
+    padding:30px;
+
+    background:transparent;
+    border:none;
+}
+
+.download-options h3{
+    color:#f4c542;
+    margin-bottom:20px;
+}
+
+.download-option{
+    display:block;
+    color:#ddd;
+    margin:15px 0;
+    font-size:1.05rem;
+    cursor:pointer;
+}
+
+.download-option input[type="radio"]{
+    accent-color:#f4c542;
+    margin-right:10px;
+    transform:scale(1.2);
+}
+
+.download-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    margin:40px 0;
+}
+
+.download-home{
+    margin:50px 0 70px;
+}
+/* ==========================================
+   INDIVIDUAL DIRECT BOOK PAGE MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.direct-book-page{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.direct-book-cover{
+    width:260px;
+    margin:0 auto;
+}
+
+.direct-book-content{
+    width:100%;
+}
+
+.direct-book-summary{
+    text-align:left;
+}
+
+.direct-book-list{
+    text-align:left;
+}
+
+}

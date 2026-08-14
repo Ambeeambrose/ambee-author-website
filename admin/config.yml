@@ -1,0 +1,141 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+
+  # --------------------
+  # HOMEPAGE
+  # --------------------
+  - name: "homepage"
+    label: "🏠 Homepage"
+    files:
+      - file: "data/homepage.json"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Hero Button Text", name: "heroButtonText", widget: "string" }
+          - { label: "Hero Button Link", name: "heroButtonLink", widget: "string" }
+          - { label: "Hero Portrait", name: "heroImage", widget: "image" }
+
+          - { label: "Featured Books Title", name: "featuredBooksTitle", widget: "string" }
+
+          - label: "Books"
+            name: "books"
+            widget: "list"
+            fields:
+              - { label: "Book Title", name: "title", widget: "string" }
+              - { label: "Book Cover", name: "cover", widget: "image" }
+              - { label: "Learn More Link", name: "learnMore", widget: "string" }
+
+  # --------------------
+  # ABOUT ME
+  # --------------------
+  - name: "about"
+    label: "👤 About Me"
+    files:
+      - file: "data/about.json"
+        label: "About Me"
+        name: "about"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+          - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+          - { label: "Paragraph 3", name: "paragraph3", widget: "text" }
+          - { label: "Paragraph 4", name: "paragraph4", widget: "text" }
+          - { label: "Paragraph 5", name: "paragraph5", widget: "text" }
+          - { label: "Paragraph 6", name: "paragraph6", widget: "text" }
+          - { label: "Author Name", name: "author", widget: "string" }
+          - { label: "Author Photo", name: "photo", widget: "image" }
+
+  # --------------------
+  # BOOK TRAILERS
+  # --------------------
+  - name: "trailers"
+    label: "🎬 Book Trailers"
+    files:
+      - file: "data/trailers.json"
+        label: "Book Trailers"
+        name: "trailers"
+        fields:
+          - label: "Trailers"
+            name: "trailers"
+            widget: "list"
+            fields:
+              - { label: "Book Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Book Cover", name: "cover", widget: "image" }
+              - { label: "Trailer Video", name: "video", widget: "file" }
+              - { label: "Amazon Link", name: "amazon", widget: "string" }
+
+  # --------------------
+  # BOOKS
+  # --------------------
+  - name: "books"
+    label: "📚 Books"
+    files:
+      - file: "data/books.json"
+        label: "Featured Books"
+        name: "featuredBooks"
+        fields:
+          - label: "Books"
+            name: "books"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Cover Image Path", name: "cover", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Learn More Link", name: "learnMore", widget: "string" }
+              - { label: "Amazon Link", name: "amazon", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string", default: "Learn More" }
+
+# --------------------
+# DIRECT BOOKSTORE
+# --------------------
+
+  - name: "bookstore"
+    label: "🛒 Direct Bookstore"
+    files:
+      - file: "data/bookstore.json"
+        label: "Direct Bookstore"
+        name: "bookstore"
+        fields:
+          - label: "Bookstore"
+            name: "bookstore"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Book Title", name: "title", widget: "string" }
+              - { label: "Book Cover", name: "cover", widget: "image" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Full Description", name: "fullDescription", widget: "markdown" }
+              - { label: "Genre", name: "genre", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+
+              - label: "Formats"
+                name: "formats"
+                widget: "select"
+                multiple: true
+                options:
+                  - EPUB
+                  - PDF
+
+              - { label: "Product Page", name: "productPage", widget: "string" }
+
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  - Published
+                  - Draft

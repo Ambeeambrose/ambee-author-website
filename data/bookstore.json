@@ -1,0 +1,18 @@
+{
+  "bookstore": [
+    {
+      "shortDescription": "A practical guide to pregnancy, childbirth, and newborn care.",
+      "genre": "Pregnancy Guide",
+      "price": "US$9.99",
+      "fullDescription": "**Every healthy pregnancy begins with the right knowledge.**\n\nSmart Practical Pregnancy Guide is a practical resource created to help expectant mothers and families confidently navigate every stage of pregnancy. It provides clear, easy-to-understand guidance on maternal health, nutrition, prenatal care, childbirth preparation, and caring for a newborn.\n\nWhether you are expecting your first child or supporting someone through pregnancy, this guide offers reliable information, practical tips, and encouragement to help you make informed decisions throughout the journey.\n\nDesigned with simplicity and real-life application in mind, this guide helps readers prepare for labour, recovery after birth, and the responsibilities of caring for a healthy baby.",
+      "status": "Published",
+      "cover": "/css/images/book-covers/SPPG.jpg",
+      "title": "Smart Practical Pregnancy Guide",
+      "formats": [
+        "EPUB",
+        "PDF"
+      ],
+      "productPage": "smart-practical-pregnancy-guide.html"
+    }
+  ]
+}

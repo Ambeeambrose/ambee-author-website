@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Cinematic Book Trailers | Ambee Ambrose</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="author-logo">
+
+<img src="css/images/ambee-ambrose.jpg"
+alt="Ambee Ambrose">
+
+<h2>Ambee Ambrose</h2>
+
+<p>Author</p>
+
+</div>
+
+<ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy-direct.html">Bookstore</a></li>
+            <li><a href="books.html">My Books</a></li>
+            <li><a href="reviews.html">Reviewer Ratings</a></li>
+            <li><a href="videos.html">Book Trailers</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+</nav>
+
+</header>
+
+<section class="videos-section">
+
+<div class="videos-header">
+
+<h1>Cinematic Book Trailers</h1>
+
+<div class="gold-line"></div>
+
+<p>
+
+Experience the stories before you read them.
+
+</p>
+
+</div>
+
+<div class="video-grid" id="videoGrid">
+    <!-- Trailers will load automatically -->
+</div>
+
+<!-- Trailer Popup -->
+<div id="videoModal" class="video-modal">
+
+    <span class="close-video" onclick="closeTrailer()">&times;</span>
+
+    <video id="trailerVideo" controls controlsList="nodownload">
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

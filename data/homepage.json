@@ -1,0 +1,45 @@
+{
+  "heroTitle": "Ambee Ambrose",
+  "heroSubtitle": "Award-Winning Storyteller of Crime, Drama and Human Truth",
+  "heroButtonText": "Visit Facebook Page",
+  "heroButtonLink": "https://web.facebook.com/AmbeeConcepts/",
+  "heroImage": "/images/uploads/ambee-garden-pix.jpg",
+  "featuredBooksTitle": "Featured Books",
+  "books": [
+    {
+      "title": "When Love Goes Wrong",
+      "cover": "/css/images/book-covers/WLGOESWAM.JPG",
+      "learnMore": "when-love-goes-wrong.html"
+    },
+    {
+      "title": "Blood Under Contract",
+      "cover": "/css/images/book-covers/BUC.jpg",
+      "learnMore": "blood-under-contract.html"
+    },
+    {
+      "title": "Betrayal of Brothers",
+      "cover": "/css/images/book-covers/BOB.jpg",
+      "learnMore": "betrayal-of-brothers.html"
+    },
+    {
+      "title": "The Mark Beneath the Diamond",
+      "cover": "/css/images/book-covers/TMBTD.jpg",
+      "learnMore": "the-mark-beneath-the-diamond.html"
+    },
+    {
+      "title": "The Shadow of Truth",
+      "cover": "/css/images/book-covers/TSOT.jpg",
+      "learnMore": "the-shadow-of-truth.html"
+    },
+    {
+      "title": "The Price of a Dream",
+      "cover": "/css/images/book-covers/TPOAD.jpg",
+      "learnMore": "the-price-of-a-dream.html"
+    },
+    {
+      "title": "Child Abuse: The Story of Busy Parents",
+      "cover": "/css/images/book-covers/CABP.jpg",
+      "learnMore": "child-abuse.html"
+    }
+  ]
+}

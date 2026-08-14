@@ -1,0 +1,25 @@
+{
+  "trailers": [
+    {
+      "title": "Blood Under Contract",
+      "subtitle": "Official Cinematic Trailer",
+      "cover": "/css/images/book-covers/BUC.jpg",
+      "video": "/videos/blood-under-contract.mp4",
+      "amazon": "https://www.amazon.com/dp/B0GN34S1FH"
+    },
+    {
+      "title": "When Love Goes Wrong",
+      "subtitle": "Official Trailer",
+      "cover": "/css/images/book-covers/WLGOESWAM.jpg",
+      "video": "/videos/when-love-goes-wrong.mp4",
+      "amazon": "https://www.amazon.com/dp/B0G6J9FLNJ"
+    },
+    {
+      "title": "Betrayal of Brothers",
+      "subtitle": "Official Trailer",
+      "cover": "/css/images/book-covers/BOB.jpg",
+      "video": "/videos/betrayal-of-brothers.mp4",
+      "amazon": "https://www.amazon.com/dp/B0CW1896QP"
+    }
+  ]
+}
