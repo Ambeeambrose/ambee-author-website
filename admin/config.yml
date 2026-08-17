@@ -78,11 +78,10 @@ collections:
               - { label: "Trailer Video", name: "video", widget: "file" }
               - { label: "Amazon Link", name: "amazon", widget: "string" }
 
-  # --------------------
+    # --------------------
   # BOOKS
   # --------------------
-  
-      - name: "books"
+  - name: "books"
     label: "📚 Books"
     format: json
     files:
