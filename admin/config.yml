@@ -84,21 +84,16 @@ collections:
   - name: "books"
     label: "📚 Books"
     files:
-      - file: "data/books.json"
-        label: "Featured Books"
-        name: "featuredBooks"
+      - file: "data/books/blood-under-contract.json"
+        label: "Blood Under Contract"
+        name: "bloodUnderContract"
         fields:
-          - label: "Books"
-            name: "books"
-            widget: "list"
-            summary: "{{fields.title}}"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Cover Image Path", name: "cover", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Learn More Link", name: "learnMore", widget: "string" }
-              - { label: "Amazon Link", name: "amazon", widget: "string" }
-              - { label: "Button Text", name: "buttonText", widget: "string", default: "Learn More" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Amazon Link", name: "amazon_link", widget: "string" }
+          - { label: "Cover Image", name: "cover", widget: "image" }
+          - { label: "Featured", name: "featured", widget: "boolean", default: false }
 
 # --------------------
 # DIRECT BOOKSTORE
