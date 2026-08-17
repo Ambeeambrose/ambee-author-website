@@ -81,8 +81,10 @@ collections:
   # --------------------
   # BOOKS
   # --------------------
-  - name: "books"
+  
+      - name: "books"
     label: "📚 Books"
+    format: json
     files:
       - file: "data/books/blood-under-contract.json"
         label: "Blood Under Contract"
