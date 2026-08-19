@@ -950,14 +950,14 @@ body {
 
 }
 
-/* Responsive */
+/* ==========================================
+   RESPONSIVE VIDEO GRID
+========================================== */
 
 @media (max-width:1400px){
 
     .video-grid{
-
         grid-template-columns:repeat(4,1fr);
-
     }
 
 }
@@ -965,9 +965,7 @@ body {
 @media (max-width:1100px){
 
     .video-grid{
-
         grid-template-columns:repeat(3,1fr);
-
     }
 
 }
@@ -975,9 +973,8 @@ body {
 @media (max-width:900px){
 
     .video-grid{
-
         grid-template-columns:repeat(2,1fr);
-
+        gap:15px;
     }
 
 }
@@ -985,9 +982,8 @@ body {
 @media (max-width:600px){
 
     .video-grid{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
     }
 
 }
@@ -1355,9 +1351,10 @@ font-size:2.2rem;
 
 @media(max-width:480px){
 
-.books-grid{
-grid-template-columns:1fr;
-}
+    .books-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px 10px;
+    }
 
 }
 
@@ -1991,6 +1988,327 @@ grid-template-columns:1fr;
 
 .direct-book-list{
     text-align:left;
+}
+
+}
+
+/* ==========================================
+   GLOBAL MOBILE RESPONSIVE FIX
+========================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Main page sections */
+
+    .hero,
+    .featured-books,
+    .about,
+    .reviews-section,
+    .contact-section,
+    .featured-videos,
+    .videos-section,
+    .books-page,
+    .buy-direct-page,
+    .product-page,
+    .checkout-page,
+    .payment-confirmation-page,
+    .download-page {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Navigation */
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 20px 5% 50px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .hero-image {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .hero-image img {
+        width: 200px;
+        max-width: 80%;
+    }
+
+    /* Featured Books */
+    .featured-books {
+        padding: 60px 5%;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .book-card {
+        width: 100%;
+    }
+
+    .book-card img {
+        max-width: 200px;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 5%;
+        background-attachment: scroll;
+    }
+
+    .about-overlay {
+        width: 100%;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-left h1 {
+        font-size: 42px;
+    }
+
+    .about-left p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .about-right img {
+        width: 280px;
+        max-width: 90%;
+    }
+
+    .signature {
+        font-size: 34px;
+    }
+
+    /* Reviews */
+    .reviews-section {
+        padding: 60px 5%;
+        background-attachment: scroll;
+    }
+
+    .reviews-header h1 {
+        font-size: 36px;
+    }
+
+    .reviews-header h2 {
+        font-size: 27px;
+    }
+
+    .reviews-header p {
+        font-size: 16px;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 20px 5%;
+        margin: 40px auto;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Videos */
+    .videos-section {
+        padding: 60px 5%;
+        background-attachment: scroll;
+    }
+
+    .videos-header h1 {
+        font-size: 36px;
+    }
+
+    .video-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .video-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Buy Direct */
+    .buy-direct-page {
+        padding: 20px 5%;
+    }
+
+    .buy-direct-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /* Books page */
+    .books-page {
+        width: 100%;
+        padding: 20px 5%;
+    }
+
+    .books-page .books-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    /* Checkout and forms */
+    .checkout-page,
+    .product-page,
+    .payment-confirmation-page,
+    .download-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .customer-information,
+    .payment-information,
+    .payment-notice,
+    .confirmation-message,
+    .confirmation-card,
+    .download-card,
+    .download-options {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* ==========================================
+   MOBILE NAVIGATION FIX
+========================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .nav-links {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .nav-links li {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.3;
+        padding: 6px 3px;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+}
+
+/* ==========================================
+   FINAL MOBILE GRID FIX
+========================================== */
+
+@media (max-width: 768px) {
+
+    .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 10px;
+    width: 100%;
+}
+
+.books-page .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
 }
 
 }
