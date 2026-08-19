@@ -77,11 +77,11 @@ collections:
               - { label: "Book Cover", name: "cover", widget: "image" }
               - { label: "Trailer Video", name: "video", widget: "file" }
               - { label: "Amazon Link", name: "amazon", widget: "string" }
-
-    # --------------------
+              
+  # --------------------
   # BOOKS
   # --------------------
-      - name: "books"
+  - name: "books"
     label: "📚 Books"
     files:
       - file: "data/books/blood-under-contract.json"
