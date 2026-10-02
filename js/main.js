@@ -25,12 +25,12 @@ function closeTrailer() {
 // Load About Me content from about.json
 document.addEventListener("DOMContentLoaded", async () => {
 
-    if (!window.location.pathname.endsWith("about.html")) {
-        return;
-    }
+    if (!document.getElementById("aboutHeading")) {
+    return;
+}
 
     try {
-        const response = await fetch("data/about.json");
+        const response = await fetch("/data/about.json");
         const data = await response.json();
 
         if (document.getElementById("aboutHeading"))
@@ -168,6 +168,43 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         console.error("Unable to load Homepage data:", error);
 
+    }
+
+});
+
+// Load Individual Book content from books folder
+document.addEventListener("DOMContentLoaded", async () => {
+
+    const bookSlug = document.body.dataset.book;
+    const bookDescription = document.getElementById("bookFullDescription");
+
+    // If this is not an individual book page, do nothing.
+    if (!bookSlug || !bookDescription) {
+        return;
+    }
+
+    try {
+
+        const response = await fetch(`data/books/${bookSlug}.json`);
+
+        if (!response.ok) {
+            throw new Error(`Unable to load ${bookSlug}.json`);
+        }
+
+        const book = await response.json();
+
+        // Display the full book description
+        bookDescription.innerHTML = book.full_description
+            .replace(/\n\n/g, "<br><br>")
+            .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+    } catch (error) {
+
+        console.error("Unable to load book data:", error);
+
+        bookDescription.innerHTML = `
+            <p>Unable to load the book description at this time.</p>
+        `;
     }
 
 });

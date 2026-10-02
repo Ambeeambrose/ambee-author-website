@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        // Load books from books.json
+        // Load the book index
         const response = await fetch("data/books.json");
 
         if (!response.ok) {
@@ -23,11 +23,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const data = await response.json();
 
+        // Load every individual book record
+        const bookPromises = data.books.map(async (book) => {
+
+            const bookResponse = await fetch(`data/books/${book.slug}.json`);
+
+            if (!bookResponse.ok) {
+                throw new Error(`Unable to load ${book.slug}.json`);
+            }
+
+            return await bookResponse.json();
+        });
+
+        const books = await Promise.all(bookPromises);
+
         // Clear the existing book cards
         booksGrid.innerHTML = "";
 
         // Create a card for every book
-        data.books.forEach(book => {
+        books.forEach(book => {
 
             booksGrid.innerHTML += `
                 <div class="book-card">
@@ -40,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         ${book.buttonText || "Learn More"}
                     </a>
 
-                    <a href="${book.amazon}"
+                    <a href="${book.amazon_link}"
                        class="btn buy-btn"
                        target="_blank"
                        rel="noopener noreferrer">

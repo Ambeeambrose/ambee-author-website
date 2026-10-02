@@ -26,7 +26,6 @@ collections:
           - { label: "Hero Button Text", name: "heroButtonText", widget: "string" }
           - { label: "Hero Button Link", name: "heroButtonLink", widget: "string" }
           - { label: "Hero Portrait", name: "heroImage", widget: "image" }
-
           - { label: "Featured Books Title", name: "featuredBooksTitle", widget: "string" }
 
           - label: "Books"
@@ -77,28 +76,31 @@ collections:
               - { label: "Book Cover", name: "cover", widget: "image" }
               - { label: "Trailer Video", name: "video", widget: "file" }
               - { label: "Amazon Link", name: "amazon", widget: "string" }
-              
+
   # --------------------
   # BOOKS
   # --------------------
   - name: "books"
     label: "📚 Books"
-    files:
-      - file: "data/books/blood-under-contract.json"
-        label: "Blood Under Contract"
-        name: "bloodUnderContract"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Author", name: "author", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Amazon Link", name: "amazon_link", widget: "string" }
-          - { label: "Cover Image", name: "cover", widget: "image" }
-          - { label: "Featured", name: "featured", widget: "boolean", default: false }
+    folder: "data/books"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Full Description", name: "full_description", widget: "markdown" }
+      - { label: "Amazon Link", name: "amazon_link", widget: "string" }
+      - { label: "Cover Image", name: "cover", widget: "image" }
+      - { label: "Learn More Page", name: "learnMore", widget: "string" }
+      - { label: "Button Text", name: "buttonText", widget: "string", default: "Learn More" }
 
-# --------------------
-# DIRECT BOOKSTORE
-# --------------------
-
+  # --------------------
+  # DIRECT BOOKSTORE
+  # --------------------
   - name: "bookstore"
     label: "🛒 Direct Bookstore"
     files:
